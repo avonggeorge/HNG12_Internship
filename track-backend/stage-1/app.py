@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-import requests  # Import the requests library
+import requests
 
 app = Flask(__name__)
 
@@ -72,4 +72,4 @@ def classify_number():
     return jsonify(response), 200
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
